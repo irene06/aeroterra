@@ -31,6 +31,19 @@ document.getElementById('lon').textContent = longitud;
 myMap.on('dblclick', e => {
    let latLng = myMap.mouseEventToLatLng.on('dragend', markerOnClick)(e.originalEvent)
 })
-
+/*Funcionalidad 1
+Crear un formulario flotante o anclado (Puede o utilizar
+algún framework de UI) para crear un “Punto de interés” y
+que permita ingresar:
+• Descripción. (ej: AEROTERRA S.A.)
+• Dirección (ej: Av. Eduardo Madero 1020, C1001 CABA)
+• Número telefónico (ej: 54 9 11 5272 0900)
+• Coordenadas X e Y (ej: -34.595986,-58.3724715) [Los
+valores posibles Longitud -180 < x < 180 ; Latitud -90 < y <
+90 ]
+• Categoría (este campo es una lista de: ‘Comercial’,
+‘Residencial’, ‘Mixta’)*/
+function captura ()
+var direcciones= document.getElementById
 
 
