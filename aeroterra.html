@@ -7,7 +7,7 @@
     integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
     crossorigin=""/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel=StyleSheet href="styles.css" type="text/css" MEDIA=screen>>
+    <link rel=StyleSheet href="styles.css" type="text/css" MEDIA=screen>
     <title>Aeroterra</title>
 
 <nav class="navbar navbar-dark bg-dark">
@@ -19,38 +19,63 @@
   </nav>
 </head>
 <body>
-    <h1>Aeroterra formulario</h1>
-    <p>
-      latitud: <span id="lat"></span>
-      longitud: <span id="lon"></span>
-    </p>
-
- 
-<section class="form-register">
-  <h4>Formulario</h4>
-     <input class="controls" type ="text" name="Descripcion" id="Descripcion" placeholder="Ingrese la Descripcion de su servicio">
-     <input class="controls" type ="text" name ="Direccion" id="Direccion" placeholder="ingrese su Direccion">
-     <input class="controls" type ="lat,long" name ="coordenadas" id="coordenadas" placeholder="ingrese sus coordenadas">
-     <input class="controls" type="tel" name="Telefono" id="telefono" placeholder="Ingrese su numero de telefono">
-     <div class="dropdown">
-         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-           Categoria
-         </button>
-         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-           <li><a class="dropdown-item" href="#">Comercial</a></li>
-           <li><a class="dropdown-item" href="#">Residencial</a></li>
-           <li><a class="dropdown-item" href="#">Mixta</a></li>
-         </ul>
-       </div>
-       <button type="button" class="btn btn-primary btn-lg">Aceptar</button>
- </section>
+    <form>Formulario de Registro</form>
+    <div class="mb-3">
+        <label for="descripcion" class="form-label">Descripcion
+        </label>
+        <input type="text" class="form-control" id="descripcion" placeholder="Ingrese la Descripcion de su compañia">
+      </div>
+      <div class="mb-3">
+        <label for="direccion" class="form-label">Direccion
+        </label>
+        <input type="text" class="form-control" id="Pos" placeholder="Ingrese su direccion">
+      </div>
+      <div class="mb-3">
+        <label for="latitud" class="form-label">Latitud
+        </label>
+        <input type="latitud" class="form-control" id="lat" placeholder="Ingrese su latitud">
+      </div>
+      <div class="mb-3">
+        <label for="longitud" class="form-label">longitud
+        </label>
+        <input type="longitud" class="form-control" id="lng" placeholder="Ingrese su longitud">
+      </div>
+      <div class="mb-3">
+        <label for="telefono" class="form-label">Telefono
+        </label>
+        <input type="tel" class="form-control" id="tel" placeholder="Ingrese su numero de telefono">
+      </div>
+      <select class="form-select" aria-label="Categoria">
+        <option selected>Categoria</option>
+        <option value="1">Comercial</option>
+        <option value="2">Residencial</option>
+        <option value="3">Mixta</option>
+      </select>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary btn-lg" type="submit">Agregar</button>
+      </div>
+</div>
+</form>
+<br>
+<br>
+<br>
     <div id="terraMap"></div>
-    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+
+</div>
+
+
+    <section>
+    </section>
+<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
     integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
     crossorigin=""></script>
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </body>
+
+
+
 </html>
